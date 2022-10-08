@@ -1,0 +1,19 @@
+%{
+%}
+%%
+[+] {printf("addition");}
+[-] {printf("subtraction");}
+[*] {printf("multiplication");}
+[/] {printf("division");}
+[<] {printf("less than");}
+[>] {printf("greater than");}
+%%
+int main()
+{
+printf("enter the operator");
+yylex();
+}
+int yywrap()
+{
+ return 1;
+}
